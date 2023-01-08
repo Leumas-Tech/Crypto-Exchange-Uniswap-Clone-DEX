@@ -131,7 +131,7 @@ const Exchange = ({ pools }) => {
           onClick={onApproveRequested}
           className={`${
             canApprove
-              ? "bg-site-pink text-white"
+              ? "bg-blue-600 text-white"
               : "bg-site-dim2 text-site-dim2"
           } ${styles.actionButton}`}
         >
@@ -142,7 +142,7 @@ const Exchange = ({ pools }) => {
           disabled={!canSwap}
           onClick={onSwapRequested}
           className={`${
-            canSwap ? "bg-site-pink text-white" : "bg-site-dim2 text-site-dim2"
+            canSwap ? "bg-red-600 text-white" : "bg-site-dim2 text-site-dim2"
           } ${styles.actionButton}`}
         >
           {isSwapping
